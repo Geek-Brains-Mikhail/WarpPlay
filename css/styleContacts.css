@@ -1,0 +1,61 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+}
+body{
+    background: #141C24;
+} 
+.main_common_block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 227px;   
+
+} 
+.main_common_block h1{
+    font-family: 'Aire Exterior';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 48px;
+    color: #FFFFFF;
+}     
+
+.main_block_icon{
+    margin-top: 50px;
+}   
+.main_block_icon i{
+    font-size: 40px;
+    color:white;
+    padding-right: 10px;
+    cursor: pointer;
+}   
+.main_block_icon i:hover{
+    color: #00C5FF;
+    transition: color,transform 1s;
+    transform: scale(1.2);
+
+}
+.main_logo{
+    display: flex;
+    gap:20px;
+    align-items: center;
+}  
+.main_logo img{
+    width: 19px;
+    height: 27px;
+}
+@media(max-width:360px)    {
+    .main_common_block{
+       margin-top: 65px;
+       text-align: center;
+    }  
+     
+    .main_block_icon{
+        display: flex;
+        gap:10px
+    }   
+    
+    
+}  

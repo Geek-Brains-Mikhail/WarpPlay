@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WARPLAY.CLOUD</title>
+    <link rel="stylesheet" href="/css/style.css">
+    
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header_common_block">
+                <a href="index.html"><img src="/img/LogoCompany.png" alt="LogoCompany" class="LogoHeader"></a>
+                <nav class="nav">
+                    <a href="#">Главная</a>
+                    <a href="#">Сервера</a>
+                    <a href="#">Скачать</a>
+                    <a href="#">Открыть в браузере</a>
+                    <a href="#">Цены</a>
+                    <a href="#">Тех поддержка</a>
+                    <a href="contacts.html">Контакты</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">       
+        <main class="main_common_block">    
+            <img src="/img/LogoCompany_second.png" alt="LogoCompany_second" class="secondLogoHeader">
+            <div class="maing_block_image">
+                <img src="/img/MainPhoto1.png" alt="MainPhoto1" id="imageinMainBlock">
+            </div>                          
+            <script type = "text/javascript">
+                var image = document.getElementById("imageinMainBlock");
+                var currentPos = 0;
+                var images = ["/img/MainPhoto1.png", "/img/MainPhoto2.png", "/img/MainPhoto3.png", "/img/MainPhoto4.png"]
+
+                function volgendefoto() {
+                    if (++currentPos >= images.length)
+                        currentPos = 0;
+
+                    image.src = images[currentPos];
+                }       
+                setInterval(volgendefoto, 6500);
+            </script>      
+            <div class="main_block_inform">
+                <h6>Сервис облачного гейминга
+                </h6>    
+                <h1>Преврати свое устройство в игровое </h1>
+                <div class="main_block_inform_button_upgrade">
+                    <img src="/img/bg_main_btn.png" alt="Btn">   
+                    <h2>UPGRADE</h2>
+                </div>
+            </div>
+        </main>
+
+        
+    </main>        
+    <section class="first_section">
+        <div class="container">
+            <div class="first_section_common_block">
+                <div class="first_section_common_block_item1">
+                    <img src="/img/ImageServerHost.png" alt="ImageServerHost">
+                </div>      
+                <div class="first_section_common_block_item2">
+                    <h6>Облачный Гейминг</h6>
+                    <h1>Как это работает</h1>
+                    <p class="first_section_paragraph_first">
+                        Наши сервера запускают игру, и передают вам картинку, которой вы можете управлять в реальном времени!
+                    </p>        
+                    <img src="/img/ImageServerHost.png" alt="ImageServerHostSecond" class="ImageServerHostSecond">          
+                    <hr class="first_section_hr">
+                    <p class="first_section_paragraph_second">
+                        Приложение  запустится на ПК с процессором от 1.5 GHz , от 1 Gb RAM и доступом в интернет от 15 мбит/с на всех операционых системах Windows 7, 8, 10 MacOS и Linux .
+                    </p>              
+                    <a href="changeOperatingSystem.html"><h3>Загрузить</h3></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

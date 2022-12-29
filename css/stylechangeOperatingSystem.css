@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "Aire Exterior";
+    src: url(../fonts/AireExterior.ttf);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration:   none;
+}      
+main{
+    width: 100vw;
+    height: 100vh;
+    background: #141C24;
+}
+.main_common_block{
+    display: flex;
+    flex-direction: column;
+    gap:125px;
+    align-items: center;
+    padding-top: 314px;
+}  
+.textblock{
+    display: flex;
+    gap:71px;
+    align-items: center;
+}    
+.iconblock{
+    display: flex;
+    gap:61px;
+
+}  
+
+.iconblock img:hover{
+    transform: scale(1.2);
+    transition: transform 1s;
+    cursor: pointer;
+}
+.textblock h1{
+    font-family: 'Aire Exterior';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 48px;
+    color: #FFFFFF;
+}      
+.textblock img{
+    width: 19px;
+    height: 27px;
+ 
+}  
+@media(max-width:360px) 
+{
+    main{
+        height: 100%;
+    }
+    .main_common_block{
+        display: flex;
+        flex-direction: column;
+        gap:70px;
+        align-items: center;
+        padding-top: 80px;
+    }    
+
+
+    .textblock{
+        gap:0px;
+        flex-direction: column;   
+        display: flex;
+        align-items: flex-start;
+    }
+    .textblock h1{
+        width: 262px;
+        padding-top: 46px;;
+ 
+    }        
+    .textblock img{
+        left:0px;
+    }
+    .iconblock{
+        flex-direction: column;
+        gap:30px;
+        padding-bottom: 128px;
+    }
+    
+}
